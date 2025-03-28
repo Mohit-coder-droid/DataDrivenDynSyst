@@ -87,7 +87,6 @@ end
 μ_right = 2
 μ_mid = 0
 
-# Check why this is giving false always, there must be something wrong in it's implementation
 while abs((μ_right - μ_left)) >= 1e-5
     μ_mid = 0.5 * (μ_left + μ_right)
     flag = volume(μ_mid, m, degV, λ)
